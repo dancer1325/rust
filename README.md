@@ -30,34 +30,24 @@
     * ownership model🧠 
 
 * **Productivity:** 
-  Comprehensive documentation, a compiler committed to providing great diagnostics, and advanced tooling including package manager and build tool ([Cargo]), auto-formatter ([rustfmt]), linter ([Clippy]) and editor support ([rust-analyzer]).
+  * Reason: 🧠 thanks to
+    * compiler provides great diagnostics
+    * package manager 
+    * build tool ([Cargo])
+    * auto-formatter ([rustfmt])
+    * linter ([Clippy])
+    * editor support ([rust-analyzer])🧠
 
 [Cargo]: https://github.com/rust-lang/cargo
 [rustfmt]: https://github.com/rust-lang/rustfmt
 [Clippy]: https://github.com/rust-lang/rust-clippy
 [rust-analyzer]: https://github.com/rust-lang/rust-analyzer
 
-## Quick Start
+## ways to install
 
-Read ["Installation"] from [The Book].
+* [-- via -- TODO]( https://doc.rust-lang.org/book/ch01-01-installation.html)
+* [-- from -- source](INSTALL.md)
 
-["Installation"]: https://doc.rust-lang.org/book/ch01-01-installation.html
-[The Book]: https://doc.rust-lang.org/book/index.html
-
-## Installing from Source
-
-If you really want to install from source (though this is not recommended), see
-[INSTALL.md](INSTALL.md).
-
-## Getting Help
-
-See https://www.rust-lang.org/community for a list of chat platforms and forums.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-For a detailed explanation of the compiler's architecture and how to begin contributing, see the [rustc-dev-guide](https://rustc-dev-guide.rust-lang.org/).
 
 ## License
 
