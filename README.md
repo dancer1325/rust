@@ -10,22 +10,27 @@
 [Website][Rust] | [Getting started] | [Learn] | [Documentation] | [Contributing]
 </div>
 
-This is the main source code repository for [Rust]. It contains the compiler,
-standard library, and documentation.
-
-[Rust]: https://www.rust-lang.org/
-[Getting Started]: https://www.rust-lang.org/learn/get-started
-[Learn]: https://www.rust-lang.org/learn
-[Documentation]: https://www.rust-lang.org/learn#learn-use
-[Contributing]: CONTRIBUTING.md
+* Rust' source code
+  * == compiler + standard library + documentation
+  * use cases
+    * critical services
+    * embedded devices
+    * easily integrated -- with -- other languages
 
 ## Why Rust?
 
-- **Performance:** Fast and memory-efficient, suitable for critical services, embedded devices, and easily integrated with other languages.
+* **Performance:**
+  * Reason: 🧠Fast & memory-efficient🧠
 
-- **Reliability:** Our rich type system and ownership model ensure memory and thread safety, reducing bugs at compile-time.
 
-- **Productivity:** Comprehensive documentation, a compiler committed to providing great diagnostics, and advanced tooling including package manager and build tool ([Cargo]), auto-formatter ([rustfmt]), linter ([Clippy]) and editor support ([rust-analyzer]).
+* **Reliability:**
+  * == memory & thread safety + few bugs | compile-time
+  * Reason: 🧠thanks to
+    * rich type system
+    * ownership model🧠 
+
+* **Productivity:** 
+  Comprehensive documentation, a compiler committed to providing great diagnostics, and advanced tooling including package manager and build tool ([Cargo]), auto-formatter ([rustfmt]), linter ([Clippy]) and editor support ([rust-analyzer]).
 
 [Cargo]: https://github.com/rust-lang/cargo
 [rustfmt]: https://github.com/rust-lang/rustfmt
