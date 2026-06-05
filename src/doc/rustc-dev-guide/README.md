@@ -1,20 +1,12 @@
-[![CI](https://github.com/rust-lang/rustc-dev-guide/actions/workflows/ci.yml/badge.svg)](https://github.com/rust-lang/rustc-dev-guide/actions/workflows/ci.yml)
+* goal
+  * how rustc works
 
-This is a collaborative effort to build a guide that explains how rustc works.
-The aim of the guide is to help new contributors get oriented to rustc,
-as well as to help more experienced folks in figuring out
-some new part of the compiler that they haven't worked on before.
-
-You may also find the [rustc API docs] useful.
-
-Note that these are not intended as a guide; it's recommended that you search
-for the docs you're looking for instead of reading them top to bottom.
-
-For documentation on developing the standard library, see
-[`std-dev-guide`](https://std-dev-guide.rust-lang.org/).
+* [rustc API docs](/compiler/rustc_middle)
+* [Standard Library Development Guide!](https://github.com/dancer1325/rust-std-dev-guide)
 
 ### Contributing to the guide
 
+TODO: 
 The guide is useful today, but it has a lot of work still to go.
 
 If you'd like to help improve the guide, we'd love to have you!
@@ -71,5 +63,3 @@ This repository is linked to `rust-lang/rust` as a [josh](https://josh-project.g
 You can use the [rustc-josh-sync](https://github.com/rust-lang/josh-sync) tool to perform synchronization.
 
 You can find a guide on how to perform the synchronization [here](./src/external-repos.md#synchronizing-a-josh-subtree).
-
-[rustc API docs]: https://doc.rust-lang.org/nightly/nightly-rustc/rustc_middle

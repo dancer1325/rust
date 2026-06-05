@@ -1,43 +1,29 @@
-# Installing from Source
+# Installing -- from -- Source
 
-**Note: This document describes _building_ Rust _from source_.
-This is _not recommended_ if you don't know what you're doing.
-If you just want to install Rust, check out the [README.md](README.md) instead.**
+* Rust build system
+  * build -- , based on `x.py` Python script, -- the compiler
 
-The Rust build system uses a Python script called `x.py` to build the compiler,
-which manages the bootstrapping process. It lives at the root of the project.
-It also uses a file named `bootstrap.toml` to determine various configuration
-settings for the build. You can see a full list of options in
-`bootstrap.example.toml`.
+* [`x.py` Python script](/x.py)    
+  * determine -- , based on [src/bootstrap](src/bootstrap), -- the build configuration
+  * steps to run
+    * | Unix systems 
 
-The `x.py` command can be run directly on most Unix systems in the following
-format:
+      ```sh
+      ./x.py <subcommand> [flags]
+      ```
+    * | [OTHER platforms](src/doc/rustc-dev-guide/src/building/how-to-build-and-run.md)
+  * [MORE](src/doc/rustc-dev-guide/src/getting-started.md)
 
-```sh
-./x.py <subcommand> [flags]
-```
-
-This is how the documentation and examples assume you are running `x.py`.
-See the [rustc dev guide][rustcguidebuild] if this does not work on your
-platform.
-
-More information about `x.py` can be found by running it with the `--help` flag
-or reading the [rustc dev guide][rustcguidebuild].
-
-[gettingstarted]: https://rustc-dev-guide.rust-lang.org/getting-started.html
-[rustcguidebuild]: https://rustc-dev-guide.rust-lang.org/building/how-to-build-and-run.html#what-is-xpy
-
-## Dependencies
-
-Make sure you have installed the dependencies:
+## requirements
 
 * `python` 3 or 2.7
 * `git`
-* A C compiler (when building for the host, `cc` is enough; cross-compiling may
-  need additional compilers)
-* `curl` (not needed on Windows)
-* `pkg-config` if you are compiling on Linux and targeting Linux
-* `libiconv` (already included with glibc on Debian-based distros)
+* C compiler
+  * TODO: (when building for the host, `cc` is enough; cross-compiling may
+    need additional compilers)
+* `curl`
+* `pkg-config` | Linux
+* `libiconv`
 
 To build Cargo, you'll also need OpenSSL (`libssl-dev` or `openssl-devel` on
 most Unix distros).
