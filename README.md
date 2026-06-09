@@ -29,5 +29,5 @@
 
 ## ways to install
 
-* [-- via -- TODO]( https://doc.rust-lang.org/book/ch01-01-installation.html)
+* [-- via -- TODO](https://doc.rust-lang.org/book/ch01-01-installation.html)
 * [-- from -- source](INSTALL.md)

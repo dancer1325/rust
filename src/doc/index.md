@@ -1,59 +1,7 @@
-% Rust Documentation
+* goal
+  * "The Rust Bookshelf" 
 
-<style>
-nav {
-    display: none;
-}
-h3 {
-    font-size: 1.35rem;
-}
-h4 {
-    font-size: 1.1rem;
-}
-
-/* Formatting for docs search bar */
-#search-input {
-    width: calc(100% - 58px);
-}
-#search-but {
-    cursor: pointer;
-}
-#search-but, #search-input {
-    padding: 4px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    outline: none;
-    font-size: 0.7em;
-    background-color: #fff;
-}
-#search-but:hover, #search-input:focus {
-    border-color: #55a9ff;
-}
-
-/* Formatting for external link icon */
-svg.external-link {
-  display: inline-block;
-  position: relative;
-  vertical-align: super;
-  width: 0.7rem;
-  height: 0.7rem;
-  padding-left: 2px;
-  top: 3px;
-}
-</style>
-
-Welcome to an overview of the documentation provided by the [Rust
-project]. This page contains links to various helpful references,
-most of which are available offline (if opened with `rustup doc`). Many of these
-resources take the form of "books"; we collectively call these "The Rust
-Bookshelf." Some are large, some are small.
-
-All of these books are managed by the Rust Organization, but other unofficial
-documentation resources are included here as well!
-
-If you're just looking for the standard library reference, here it is:
-[Rust API documentation](std/index.html)
-
+* if you want to open LOCALLY the documentation ->  `rustup doc`
 
 ## Learning Rust
 
@@ -86,45 +34,29 @@ to try out and share small bits of code, or experiment with some of the most
 popular crates.
 
 
-## Using Rust
+## how to use Rust?
 
-Once you've gotten familiar with the language, these resources can help you put
-it to work.
+### Standard Library
 
-### The Standard Library
-
-Rust's standard library has [extensive API documentation](std/index.html), with
-explanations of how to use various things, as well as example code for
-accomplishing various tasks. Code examples have a "Run" button on hover that
-opens the sample in the playground.
-
-<div>
-  <form action="std/index.html" method="get">
-    <input id="search-input" type="search" name="search"
-           placeholder="Search through the standard library"/>
-    <button id="search-but">Search</button>
-  </form>
-</div>
+* [here](/library/std/src/lib.md)
 
 ### Your Personal Documentation
 
-Whenever you are working in a crate, `cargo doc --open` will generate
-documentation for your project _and_ all its dependencies in their correct
-version, and open it in your browser. Add the flag `--document-private-items` to
-also show items not marked `pub`.
+* | work | crate,
+  * `cargo doc --open`
+    * generate documentation -- for -- 
+      * your project 
+      * your project's dependencies
+    * if you want to show items / NOT marked as `pub` -> pass the flag `--document-private-items`
 
 ### Rust Version History
 
-[The Release Notes](releases.html) describes the change history of the Rust
-toolchain and language.
-
-[The Edition Guide](edition-guide/index.html) describes the Rust editions and
-their differences. The latest version of the toolchain supports all
-historical editions.
+* [Release Notes](/RELEASES.md)
+* [Edition Guide](/src/doc/edition-guide)
 
 ### The `rustc` Book
 
-[The `rustc` Book](rustc/index.html) describes the Rust compiler, `rustc`.
+* [here](rustc/src/what-is-rustc.md)
 
 ### The Cargo Book
 
