@@ -1,10 +1,14 @@
 * goal
   * how rustc works
 
-* [rustc API docs](/compiler/rustc_middle)
+* [rustc API docs](../../../compiler/rustc_middle)
 * [Standard Library Development Guide!](https://github.com/dancer1325/rust-std-dev-guide)
 
-### Contributing to the guide
+## documentation
+
+* [here](src/SUMMARY.md)
+
+## Contributing to the guide
 
 TODO: 
 The guide is useful today, but it has a lot of work still to go.
@@ -30,7 +34,7 @@ Check out the forge documentation for [our policy][forge_policy].
 
 [forge_policy]: https://forge.rust-lang.org/rustc-dev-guide/index.html#review-policy
 
-### Build Instructions
+## Build Instructions
 
 To build a local static HTML site, install [`mdbook`](https://github.com/rust-lang/mdBook) with:
 
@@ -46,7 +50,7 @@ mdbook build --open
 
 The build files are found in the `book/html` directory.
 
-### Link Validations
+## Link Validations
 
 We use `mdbook-linkcheck2` to validate URLs included in our documentation.
 Link checking is **not** run by default locally, though it is in CI.

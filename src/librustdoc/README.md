@@ -1,2 +1,2 @@
-* `librustdoc`
-  * [how does it work?](../doc/rustdoc)
+## documentation
+* [here](../doc/rustdoc)
