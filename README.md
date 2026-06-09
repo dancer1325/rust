@@ -7,6 +7,10 @@
     * embedded devices
     * easily integrated -- with -- other languages
 
+## documentation
+
+* [here](src/doc/index.md)
+
 ## Why Rust?
 
 * **Performance:**
