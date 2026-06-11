@@ -5,7 +5,7 @@
 // Test that freezing an `&mut` pointer while referent is
 // frozen is legal.
 //
-// Example from compiler/rustc_borrowck/borrowck/README.md
+// Example from compiler/rustc_borrowck/borrowck/README.md.md
 
 
 fn foo<'a>(mut t0: &'a mut isize,

@@ -1,4 +1,4 @@
-//! Code that decides when workers should go to sleep. See README.md
+//! Code that decides when workers should go to sleep. See README.md.md
 //! for an overview.
 
 use std::sync::atomic::Ordering;
@@ -42,9 +42,9 @@ impl SleepData {
 /// of workers. It has callbacks that are invoked periodically at significant events,
 /// such as when workers are looping and looking for work, when latches are set, or when
 /// jobs are published, and it either blocks threads or wakes them in response to these
-/// events. See the [`README.md`] in this module for more details.
+/// events. See the [`README.md.md`] in this module for more details.
 ///
-/// [`README.md`]: README.md
+/// [`README.md.md`]: README.md.md
 pub(super) struct Sleep {
     /// One "sleep state" per worker. Used to track if a worker is sleeping and to have
     /// them block.

@@ -25,7 +25,7 @@ impl GitCtx {
         ctx.run_git(&["init"]);
         ctx.run_git(&["config", "user.name", "Tester"]);
         ctx.run_git(&["config", "user.email", "tester@rust-lang.org"]);
-        ctx.modify("README.md");
+        ctx.modify("README.md.md");
         ctx.commit();
         ctx.run_git(&["branch", "-m", "main"]);
         ctx

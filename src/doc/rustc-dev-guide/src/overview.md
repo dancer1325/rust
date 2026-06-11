@@ -1,20 +1,19 @@
 # Overview of the compiler
 
-This chapter is about the overall process of compiling a program -- how everything fits together.
+* goal
+  * process of compile a program
 
-The Rust compiler is special in two ways: it does things to your code that
-other compilers don't do (e.g. borrow-checking) and it has a lot of
-unconventional implementation choices (e.g. queries).
-We will talk about these in turn in this chapter, and in the rest of the guide, we will look at the
-individual pieces in more detail.
+* Rust compiler
+  * [does things | your code / OTHER compilers do NOT do](#what-the-compiler-does--your-code)
+    * _Example:_ [borrow-checking](borrow-check.md)
+  * has a lot of unconventional implementation choices
+    * _Example:_ [queries](query.md)
 
-## What the compiler does to your code
-
-So first, let's look at what the compiler does to your code.
-For now, we will avoid mentioning how the compiler implements these steps except as needed.
+## What the compiler does | your code?
 
 ### Invocation
 
+TODO: 
 Compilation begins when a user writes a Rust source program in text and invokes
 the `rustc` compiler on it.
 The work that the compiler needs to perform is defined by command-line options.

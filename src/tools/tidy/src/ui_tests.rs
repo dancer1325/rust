@@ -76,7 +76,7 @@ pub fn check(root_path: &Path, tidy_ctx: TidyCtx) {
 
     // The list of subdirectories in ui tests.
     // Compare previous subdirectory with current subdirectory
-    // to sync with `tests/ui/README.md`.
+    // to sync with `tests/ui/README.md.md`.
     // See <https://github.com/rust-lang/rust/issues/150399>
     let mut prev_line = String::new();
     let mut is_sorted = true;
@@ -85,7 +85,7 @@ pub fn check(root_path: &Path, tidy_ctx: TidyCtx) {
         .filter_map(|line| {
             static_regex!(r"^##.*?`(?<dir>[^`]+)`").captures(line).map(|cap| {
                 let dir = &cap["dir"];
-                // FIXME(reddevilmidzy) normalize subdirs title in tests/ui/README.md
+                // FIXME(reddevilmidzy) normalize subdirs title in tests/ui/README.md.md
                 if dir.ends_with('/') {
                     dir.strip_suffix('/').unwrap().to_string()
                 } else {
@@ -105,7 +105,7 @@ pub fn check(root_path: &Path, tidy_ctx: TidyCtx) {
     let is_modified = !filesystem_subdirs.eq(&documented_subdirs);
 
     if !is_sorted {
-        check.error("`tests/ui/README.md` is not in order");
+        check.error("`tests/ui/README.md.md` is not in order");
     }
     if is_modified {
         for directory in documented_subdirs.symmetric_difference(&filesystem_subdirs) {
@@ -120,7 +120,7 @@ pub fn check(root_path: &Path, tidy_ctx: TidyCtx) {
             }
         }
         check.error(
-                   "`tests/ui/README.md` subdirectory listing is out of sync with the filesystem. \
+                   "`tests/ui/README.md.md` subdirectory listing is out of sync with the filesystem. \
                     Please add or remove subdirectory entries (## headers with backtick-wrapped names) to match the actual directories in `tests/ui/`"
                );
     }
@@ -140,7 +140,7 @@ fn deny_new_top_level_ui_tests(check: &mut RunningCheck, tests_path: &Path) {
         .flatten()
         .filter(|e| {
             let file_name = e.file_name();
-            file_name != ".gitattributes" && file_name != "README.md"
+            file_name != ".gitattributes" && file_name != "README.md.md"
         })
         .filter(|e| !e.file_type().is_some_and(|f| f.is_dir()));
 

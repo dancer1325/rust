@@ -1,4 +1,4 @@
-// See the `README.md` in this directory for what this tool is.
+// See the `README.md.md` in this directory for what this tool is.
 
 // The source for this crate lives at
 // https://github.com/bytecodealliance/wasm-component-ld and the binary is

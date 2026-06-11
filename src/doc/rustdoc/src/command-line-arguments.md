@@ -169,8 +169,8 @@ $ rustdoc src/lib.rs --codegen target_feature=+avx
 $ rustdoc --test src/lib.rs -C target_feature=+avx
 $ rustdoc --test src/lib.rs --codegen target_feature=+avx
 
-$ rustdoc --test README.md -C target_feature=+avx
-$ rustdoc --test README.md --codegen target_feature=+avx
+$ rustdoc --test README.md.md -C target_feature=+avx
+$ rustdoc --test README.md.md --codegen target_feature=+avx
 ```
 
 When rustdoc generates documentation, looks for documentation tests, or executes documentation
@@ -294,7 +294,7 @@ requested theme does not exist, the builtin default (currently
 Using this flag looks like this:
 
 ```bash
-$ rustdoc README.md --markdown-css foo.css
+$ rustdoc README.md.md --markdown-css foo.css
 ```
 
 When rendering Markdown files, this will create a `<link>` element in the
@@ -314,7 +314,7 @@ Using this flag looks like this:
 
 ```bash
 $ rustdoc src/lib.rs --html-in-header header.html
-$ rustdoc README.md --html-in-header header.html
+$ rustdoc README.md.md --html-in-header header.html
 ```
 
 This flag takes a list of files, and inserts them into the `<head>` section of
@@ -326,7 +326,7 @@ Using this flag looks like this:
 
 ```bash
 $ rustdoc src/lib.rs --html-before-content extra.html
-$ rustdoc README.md --html-before-content extra.html
+$ rustdoc README.md.md --html-before-content extra.html
 ```
 
 This flag takes a list of files, and inserts them inside the `<body>` tag but
@@ -339,7 +339,7 @@ Using this flag looks like this:
 
 ```bash
 $ rustdoc src/lib.rs --html-after-content extra.html
-$ rustdoc README.md --html-after-content extra.html
+$ rustdoc README.md.md --html-after-content extra.html
 ```
 
 This flag takes a list of files, and inserts them before the `</body>` tag but
@@ -352,7 +352,7 @@ documentation.
 Using this flag looks like this:
 
 ```bash
-$ rustdoc README.md --markdown-playground-url https://play.rust-lang.org/
+$ rustdoc README.md.md --markdown-playground-url https://play.rust-lang.org/
 ```
 
 When rendering a Markdown file, this flag gives the base URL of the Rust
@@ -364,7 +364,7 @@ Playground, to use for generating `Run` buttons.
 Using this flag looks like this:
 
 ```bash
-$ rustdoc README.md --markdown-no-toc
+$ rustdoc README.md.md --markdown-no-toc
 ```
 
 When generating documentation from a Markdown file, by default, `rustdoc` will

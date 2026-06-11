@@ -30,7 +30,7 @@ declare_clippy_lint! {
     /// name = "clippy"
     /// version = "0.0.212"
     /// repository = "https://github.com/rust-lang/rust-clippy"
-    /// readme = "README.md"
+    /// readme = "README.md.md"
     /// license = "MIT OR Apache-2.0"
     /// keywords = ["clippy", "lint", "plugin"]
     /// categories = ["development-tools", "development-tools::cargo-plugins"]
@@ -45,7 +45,7 @@ declare_clippy_lint! {
     /// version = "0.0.212"
     /// description = "A bunch of helpful lints to avoid common pitfalls in Rust"
     /// repository = "https://github.com/rust-lang/rust-clippy"
-    /// readme = "README.md"
+    /// readme = "README.md.md"
     /// license = "MIT OR Apache-2.0"
     /// keywords = ["clippy", "lint", "plugin"]
     /// categories = ["development-tools", "development-tools::cargo-plugins"]

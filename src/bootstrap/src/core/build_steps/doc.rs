@@ -388,7 +388,7 @@ impl Step for Standalone {
             let file = t!(file);
             let path = file.path();
             let filename = path.file_name().unwrap().to_str().unwrap();
-            if !filename.ends_with(".md") || filename == "README.md" {
+            if !filename.ends_with(".md") || filename == "README.md.md" {
                 continue;
             }
 

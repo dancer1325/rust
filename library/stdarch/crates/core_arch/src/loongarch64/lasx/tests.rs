@@ -1,5 +1,5 @@
 // This code is automatically generated. DO NOT MODIFY.
-// See crates/stdarch-gen-loongarch/README.md
+// See crates/stdarch-gen-loongarch/README.md.md
 
 use crate::{
     core_arch::{loongarch64::*, simd::*},

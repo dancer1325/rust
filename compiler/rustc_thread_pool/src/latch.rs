@@ -31,7 +31,7 @@ use crate::registry::{Registry, WorkerThread};
 ///   the probe).
 /// - Once `set()` occurs, the next `probe()` *will* observe it. This
 ///   typically requires a seq-cst ordering. See [the "tickle-then-get-sleepy" scenario in the sleep
-///   README](/src/sleep/README.md#tickle-then-get-sleepy) for details.
+///   README.md](/src/sleep/README.md.md#tickle-then-get-sleepy) for details.
 pub(super) trait Latch {
     /// Set the latch, signalling others.
     ///

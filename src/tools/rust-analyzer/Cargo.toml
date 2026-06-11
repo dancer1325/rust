@@ -97,7 +97,7 @@ ra-ap-rustc_next_trait_solver = { version = "0.165", default-features = false }
 
 # local crates that aren't published to crates.io. These should not have versions.
 
-# in-tree crates that are published separately and follow semver. See lib/README.md
+# in-tree crates that are published separately and follow semver. See lib/README.md.md
 line-index = { version = "0.1.2" }
 la-arena = { version = "0.3.1" }
 lsp-server = { version = "0.7.9" }

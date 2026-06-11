@@ -152,7 +152,7 @@ fn foo() -> i32 {
 And call `rustdoc` on it:
 
 ```bash
-$ rustdoc README.md
+$ rustdoc README.md.md
 ```
 
 You will find an HTML file in `docs/doc/README.html` generated from its

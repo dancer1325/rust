@@ -505,7 +505,7 @@ fn any_debug() {
 }
 
 /// These tests use insta for snapshot testing.
-/// See bootstrap's README on how to bless the snapshots.
+/// See bootstrap's README.md on how to bless the snapshots.
 mod snapshot {
     use std::path::PathBuf;
 

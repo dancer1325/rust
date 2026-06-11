@@ -1,12 +1,14 @@
 # Clippy
 
-[![License: MIT OR Apache-2.0](https://img.shields.io/crates/l/clippy.svg)](#license)
+* == collection of lints /
+  * catch common mistakes
+  * improve your Rust code
+  * grouped -- by -- [lint level](https://doc.rust-lang.org/rustc/lints/levels.html) 
 
-A collection of lints to catch common mistakes and improve your [Rust](https://github.com/rust-lang/rust) code.
-
+TODO: 
 [There are over 800 lints included in this crate!](https://rust-lang.github.io/rust-clippy/master/index.html)
 
-Lints are divided into categories, each with a default [lint level](https://doc.rust-lang.org/rustc/lints/levels.html).
+
 You can choose how much Clippy is supposed to ~~annoy~~ help you by changing the lint level by category.
 
 | Category              | Description                                                                         | Default level |
@@ -21,8 +23,6 @@ You can choose how much Clippy is supposed to ~~annoy~~ help you by changing the
 | `clippy::restriction` | lints which prevent the use of language and library features[^restrict]             | allow         |
 | `clippy::nursery`     | new lints that are still under development                                          | allow         |
 | `clippy::cargo`       | lints for the cargo manifest                                                        | allow         |
-
-More to come, please [file an issue](https://github.com/rust-lang/rust-clippy/issues) if you have ideas!
 
 The `restriction` category should, *emphatically*, not be enabled as a whole. The contained
 lints may lint against perfectly reasonable code, may not have an alternative suggestion,
@@ -269,20 +269,3 @@ Note: `custom_inner_attributes` is an unstable feature, so it has to be enabled 
 
 Lints that recognize this configuration option can be found [here](https://rust-lang.github.io/rust-clippy/master/index.html#msrv)
 
-## Contributing
-
-If you want to contribute to Clippy, you can find more information in [CONTRIBUTING.md](https://github.com/rust-lang/rust-clippy/blob/master/CONTRIBUTING.md).
-
-## License
-
-<!-- REUSE-IgnoreStart -->
-
-Copyright (c) The Rust Project Contributors
-
-Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
-[https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)> or the MIT license
-<LICENSE-MIT or [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)>, at your
-option. Files in the project may not be
-copied, modified, or distributed except according to those terms.
-
-<!-- REUSE-IgnoreEnd -->

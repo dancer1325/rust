@@ -255,7 +255,7 @@ Using this flag looks like this:
 
 ```bash
 $ rustdoc src/lib.rs -Z unstable-options --markdown-before-content extra.md
-$ rustdoc README.md -Z unstable-options --markdown-before-content extra.md
+$ rustdoc README.md.md -Z unstable-options --markdown-before-content extra.md
 ```
 
 Just like `--html-before-content`, this allows you to insert extra content inside the `<body>` tag
@@ -269,7 +269,7 @@ Using this flag looks like this:
 
 ```bash
 $ rustdoc src/lib.rs -Z unstable-options --markdown-after-content extra.md
-$ rustdoc README.md -Z unstable-options --markdown-after-content extra.md
+$ rustdoc README.md.md -Z unstable-options --markdown-after-content extra.md
 ```
 
 Just like `--html-after-content`, this allows you to insert extra content before the `</body>` tag

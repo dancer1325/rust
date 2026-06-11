@@ -1,4 +1,4 @@
-# See the `README.md` in this directory for what this tool is.
+# See the `README.md.md` in this directory for what this tool is.
 
 [package]
 name = "wasm-component-ld-wrapper"

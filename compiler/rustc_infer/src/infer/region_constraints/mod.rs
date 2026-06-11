@@ -1,4 +1,4 @@
-//! See `README.md`.
+//! See `README.md.md`.
 
 use std::ops::Range;
 use std::{cmp, fmt, iter, mem};

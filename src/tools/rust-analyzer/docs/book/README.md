@@ -1,10 +1,9 @@
 # rust-analyzer documentation
 
-The rust analyzer manual uses [mdbook](https://rust-lang.github.io/mdBook/).
+* -- based on -- [mdbook](https://rust-lang.github.io/mdBook/)
+* [index](src/SUMMARY.md)
 
-## Quick start
-
-To run the documentation site locally:
+## how to run locally?
 
 ```bash
 cargo install mdbook
@@ -15,10 +14,9 @@ mdbook serve
 # ...
 ```
 
-mdbook will rebuild the documentation as changes are made.
-
 ## Making updates
 
+TODO: 
 While not required, installing the mdbook binary can be helpful in order to see the changes.
 Start with the mdbook [User Guide](https://rust-lang.github.io/mdBook/guide/installation.html) to familiarize yourself with the tool.
 

@@ -652,9 +652,9 @@ impl Step for Rustc {
                 builder.install(&file, &image.join("share/doc/rust"), FileType::Regular);
             }
 
-            // README
+            // README.md
             builder.install(
-                &builder.src.join("README.md"),
+                &builder.src.join("README.md.md"),
                 &image.join("share/doc/rust"),
                 FileType::Regular,
             );
@@ -1334,7 +1334,7 @@ fn prepare_source_tarball<'a>(
         "Cargo.toml",
         "LICENSE-APACHE",
         "LICENSE-MIT",
-        "README.md",
+        "README.md.md",
         "RELEASES.md",
         "REUSE.toml",
         "bootstrap.example.toml",
@@ -3142,7 +3142,7 @@ impl Step for Gcc {
             );
         }
 
-        // We need the GCC sources to build GCC and also to add its license and README
+        // We need the GCC sources to build GCC and also to add its license and README.md
         // files to the tarball
         builder.require_submodule(
             "src/gcc",

@@ -21,7 +21,7 @@ pub(super) struct Counters {
 }
 
 /// A value read from the **Jobs Event Counter**.
-/// See the [`README.md`](README.md) for more
+/// See the [`README.md.md`](README.md.md) for more
 /// coverage of how the jobs event counter works.
 #[derive(Copy, Clone, Debug, PartialEq, PartialOrd)]
 pub(super) struct JobsEventCounter(usize);

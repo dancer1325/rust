@@ -1,6 +1,6 @@
 // This file contains type definitions that are processed by the TypeScript Compiler but are
 // not put into the JavaScript we include as part of the documentation. It is used for
-// type checking. See README.md in this directory for more info.
+// type checking. See README.md.md in this directory for more info.
 
 import { RoaringBitmap } from "./stringdex";
 

@@ -34,34 +34,34 @@ pub(crate) enum OverlayKind {
 impl OverlayKind {
     fn legal_and_readme(&self) -> &[&str] {
         match self {
-            OverlayKind::Rust => &["COPYRIGHT", "LICENSE-APACHE", "LICENSE-MIT", "README.md"],
+            OverlayKind::Rust => &["COPYRIGHT", "LICENSE-APACHE", "LICENSE-MIT", "README.md.md"],
             OverlayKind::Llvm => {
-                &["src/llvm-project/llvm/LICENSE.TXT", "src/llvm-project/llvm/README.txt"]
+                &["src/llvm-project/llvm/LICENSE.TXT", "src/llvm-project/llvm/README.md.txt"]
             }
             OverlayKind::Enzyme => &["src/tools/enzyme/LICENSE", "src/tools/enzyme/Readme.md"],
             OverlayKind::Cargo => &[
-                "src/tools/cargo/README.md",
+                "src/tools/cargo/README.md.md",
                 "src/tools/cargo/LICENSE-MIT",
                 "src/tools/cargo/LICENSE-APACHE",
                 "src/tools/cargo/LICENSE-THIRD-PARTY",
             ],
             OverlayKind::Clippy => &[
-                "src/tools/clippy/README.md",
+                "src/tools/clippy/README.md.md",
                 "src/tools/clippy/LICENSE-APACHE",
                 "src/tools/clippy/LICENSE-MIT",
             ],
             OverlayKind::Miri => &[
-                "src/tools/miri/README.md",
+                "src/tools/miri/README.md.md",
                 "src/tools/miri/LICENSE-APACHE",
                 "src/tools/miri/LICENSE-MIT",
             ],
             OverlayKind::Rustfmt => &[
-                "src/tools/rustfmt/README.md",
+                "src/tools/rustfmt/README.md.md",
                 "src/tools/rustfmt/LICENSE-APACHE",
                 "src/tools/rustfmt/LICENSE-MIT",
             ],
             OverlayKind::RustAnalyzer => &[
-                "src/tools/rust-analyzer/README.md",
+                "src/tools/rust-analyzer/README.md.md",
                 "src/tools/rust-analyzer/LICENSE-APACHE",
                 "src/tools/rust-analyzer/LICENSE-MIT",
             ],
@@ -79,10 +79,10 @@ impl OverlayKind {
                 "COPYRIGHT",
                 "LICENSE-APACHE",
                 "LICENSE-MIT",
-                "src/tools/llvm-bitcode-linker/README.md",
+                "src/tools/llvm-bitcode-linker/README.md.md",
             ],
             OverlayKind::Gcc => &[
-                "src/gcc/README",
+                "src/gcc/README.md",
                 "src/gcc/COPYING",
                 "src/gcc/COPYING.LIB",
                 "src/gcc/COPYING.RUNTIME",

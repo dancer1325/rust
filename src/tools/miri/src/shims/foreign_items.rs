@@ -482,26 +482,26 @@ trait EvalContextExtPriv<'tcx>: crate::MiriInterpCxExt<'tcx> {
                 // Try to run another thread to maximize the chance of finding actual bugs.
                 this.yield_active_thread();
             }
-            // Obtains the size of a Miri backtrace. See the README for details.
+            // Obtains the size of a Miri backtrace. See the README.md for details.
             "miri_backtrace_size" => {
                 this.handle_miri_backtrace_size(abi, link_name, args, dest)?;
             }
-            // Obtains a Miri backtrace. See the README for details.
+            // Obtains a Miri backtrace. See the README.md for details.
             "miri_get_backtrace" => {
                 // `check_shim` happens inside `handle_miri_get_backtrace`.
                 this.handle_miri_get_backtrace(abi, link_name, args)?;
             }
-            // Resolves a Miri backtrace frame. See the README for details.
+            // Resolves a Miri backtrace frame. See the README.md for details.
             "miri_resolve_frame" => {
                 // `check_shim` happens inside `handle_miri_resolve_frame`.
                 this.handle_miri_resolve_frame(abi, link_name, args, dest)?;
             }
-            // Writes the function and file names of a Miri backtrace frame into a user provided buffer. See the README for details.
+            // Writes the function and file names of a Miri backtrace frame into a user provided buffer. See the README.md for details.
             "miri_resolve_frame_names" => {
                 this.handle_miri_resolve_frame_names(abi, link_name, args)?;
             }
             // Writes some bytes to the interpreter's stdout/stderr. See the
-            // README for details.
+            // README.md for details.
             "miri_write_to_stdout" | "miri_write_to_stderr" => {
                 let [msg] = this.check_shim_sig_lenient(abi, CanonAbi::Rust, link_name, args)?;
                 let msg = this.read_immediate(msg)?;

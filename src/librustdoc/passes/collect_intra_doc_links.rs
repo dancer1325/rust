@@ -1030,7 +1030,7 @@ fn preprocess_link(
     // If we have an intra-doc link starting with `!` (which isn't `[!]` because this is the never type), we ignore it
     // as it is never valid.
     //
-    // The case is common enough because of cases like `#[doc = include_str!("../README.md")]` which often
+    // The case is common enough because of cases like `#[doc = include_str!("../README.md.md")]` which often
     // uses GitHub-flavored Markdown (GFM) admonitions, such as `[!NOTE]`.
     if is_shortcut_style
         && let Some(suffix) = ori_link.link.strip_prefix('!')

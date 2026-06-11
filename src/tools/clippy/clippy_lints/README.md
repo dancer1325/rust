@@ -1,1 +1,2 @@
-This crate contains Clippy lints. For the main crate, check [GitHub](https://github.com/rust-lang/rust-clippy).
+* == crate / contains Clippy lints
+  * [main crate](https://github.com/rust-lang/rust-clippy)

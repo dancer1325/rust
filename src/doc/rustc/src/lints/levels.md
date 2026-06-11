@@ -1,43 +1,32 @@
 # Lint Levels
 
-In `rustc`, lints are divided into six *levels*:
+* goal
+  * lints levels | `rustc`
+    1. [allow](#allow)
+    2. [expect](#expect)
+    3. [warn](#warn)
+    4. [force-warn](#force-warn)
+    5. [deny](#deny)
+    6. [forbid](#forbid)
 
-1. allow
-2. expect
-3. warn
-4. force-warn
-5. deny
-6. forbid
-
+TODO: 
 Each lint has a default level (explained in the lint listing later in this
-chapter), and the compiler has a default warning level. First, let's explain
-what these levels mean, and then we'll talk about configuration.
+chapter), and the compiler has a default warning level
 
 ## allow
 
-These lints exist, but by default, do nothing. For example, consider this
-source:
+* by default,
+  * do NOTHING
 
-```rust
-pub fn foo() {}
-```
-
-Compiling this file produces no warnings:
-
-```bash
-$ rustc lib.rs --crate-type=lib
-$
-```
-
-But this code violates the `missing_docs` lint.
-
-These lints exist mostly to be manually turned on via configuration, as we'll
-talk about later in this section.
+* how to use?
+  * MANUALLY turn on -- via -- configuration
 
 ## expect
 
-Sometimes, it can be helpful to suppress lints, but at the same time ensure that
-the code in question still emits them. The 'expect' level does exactly this. If
+* == check code BUT ❌NOT print the output❌
+
+TODO: 
+  * If
 the lint in question is not emitted, the `unfulfilled_lint_expectations` lint
 triggers on the `expect` attribute, notifying you that the expectation is no
 longer fulfilled.
@@ -334,11 +323,13 @@ pollute the output of your build. However, note that `--cap-lints allow` does **
 
 ## Priority of lint level sources
 
-Rust allows setting lint levels (`allow`, `warn`, `deny`, `forbid`, `force-warn`) through various sources:
+* ways to set lint levels
+  * -- through -- Attributes
+    * _Examples:_ `#[allow(...)]`, `#![deny(...)]`, etc.
+  * -- through -- CL options
+    * _Examples:_ `--cap-lints`, `--force-warn`, `-A`, `-W`, `-D`, `-F`
 
-- **Attributes**: `#[allow(...)]`, `#![deny(...)]`, etc.
-- **Command-line options**: `--cap-lints`, `--force-warn`, `-A`, `-W`, `-D`, `-F`
-
+TODO: 
 Here’s how these different lint controls interact:
 
 1. [`--force-warn`](#force-warn) forces a lint to warning level, and takes precedence over attributes and all other CLI flags.
