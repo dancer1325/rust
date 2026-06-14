@@ -1,5 +1,8 @@
 # LLVM Bitcode Linker
-The LLVM bitcode linker can be used to link targets without any dependency on system libraries.
-The code will be linked in llvm-bc before compiling to native code. For some of these targets
-(e.g. ptx) there does not exist a sensible way to link the native format at all. A bitcode linker
-is required to link code compiled for such targets.
+
+* uses
+  * link targets WITHOUT any dependency | system libraries
+    * BEFORE compiling the code to native code, the code is linked in llvm-bc 
+    * there is NO sensible way to link the native format / some of these targets
+      * _Example:_ ptx 
+  * link code compiled / such targets
